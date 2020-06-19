@@ -30,6 +30,8 @@
     
     <?php
     require_once "DBconnect.php"; //データベース接続
+    $connect = new DbCnct();
+    $pdo=$connect->dbConnect();
     
     //search.htmlでデータを検索された場合
     try {
