@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登録者検索フォーム</title>
+    <!-- bootstrapの読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            text-align: center;
+            background: black;
+            color: white;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        a {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="p-3 mb-4 bg-white text-dark">
+        <h2 class="mt-3 mb-4">登録者検索フォーム</h2>
+    </div>
+<form action="list.php" method="POST" name="form1">
+    <p>名前</p>
+    <!-- 入力されたキーワードを検索ワード化 -->
+    <input type="text" name="search_key"><br><br> 
+    <input type="submit" value="検索する"><br><br>
+</form>
+<a href="messagelist.php">ご意見一覧</a><br>
+<br><a href="list.php">登録者一覧はこちらから</a><br><br>
+<a href="form.html">新規登録はこちらから</a><br>
+</body>
+</html>
