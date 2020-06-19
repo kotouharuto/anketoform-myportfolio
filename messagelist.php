@@ -39,6 +39,8 @@
 <div class="main">
     <?php
     require_once "DBconnect.php"; //データベース接続
+    $connect = new DbCnct();
+    $pdo=$connect->dbConnect();
     $sql = "SELECT * FROM users WHERE 1";
     $stmh = $pdo->prepare($sql);
     $stmh->execute();
