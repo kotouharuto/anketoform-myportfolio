@@ -6,11 +6,11 @@
 - メッセージ一覧を確認できる
 
 # 画面遷移
-1 form.html
-2 view.php
-3 list.php
-3 message.php
-4 search.html
+1 form.html ->
+2 view.php ->
+3 list.php、
+3 message.php ->
+4 search.html ->
 5 list.php
 
 # 使用技術
