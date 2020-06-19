@@ -1,6 +1,8 @@
 <?php
 //form.htmlで登録したデータを表示(確認用に)
 require_once "DBconnect.php"; //データベース接続
+$connect = new DbCnct();
+$pdo=$connect->dbConnect();
 
 $fname = $_POST['first_name']; //from.htmlの入力データを取得
 $lname = $_POST['last_name'];
