@@ -18,4 +18,4 @@
 - css3
 - bootstrap4
 - PHP7.4.2
-- mysqlnd 7.4.2
+- MYSQL
