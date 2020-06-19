@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケートフォーム</title>
+    <!-- bootstrapの読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        @charset "utf-8";
+        body {
+            background-image: url(../anketomyportfolio/formimg.jpeg);
+            text-align: center;
+        }
+
+        .value {
+            font-size: x-large;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cyuui {
+            font-size: medium;
+        }
+
+        .allform {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 80%;
+            height: 50%;
+        }
+
+        .form {
+            width: 70%;
+            height: 50px;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            width: 100%;
+            height: 100px;
+            display: inline-block;
+            opacity: 70%;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: white;
+            font-family: 'Times New Roman';
+        }
+
+        a {
+            background: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title mt-5">ANKETO FORM</h1>
+    </header>
+    <div class="body">
+        <form action="view.php" name="form1" method="POST" class="allform">
+
+            <div class="first">
+                <p class="value">姓<br>
+                    <span class="cyuui">(半角数字で入力してください)</span>
+                </p>
+                <input type="text" name="first_name" class="form"><br><br>
+            </div>
+
+            <div class="last">
+                <p class="value">名<br>
+                    <span class="cyuui">(半角数字で入力してください)</span>
+                </p>
+                <input type="text" name="last_name" class="form"><br><br>
+            </div>
+
+            <div class="age">
+                <p class="value">年齢<br>
+                    <span class="cyuui">(半角数字で入力してください)</span>
+                </p>
+                <input type="text" name="age" class="form"><br><br><br>
+            </div>
+
+            <div class="form-group">
+                <p class="value">ご意見<br></p>
+                <textarea class="form" name="message" ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary">送信</button><br><br>
+
+            <a href="messagelist.php">ご意見一覧</a><br><br>
+            <a href="search.html">登録者検索はこちらから</a><br><br>
+            <a href="list.php">登録者一覧はこちらから</a><br><br>
+        </form>
+    </div>
+</body>
+</html>
